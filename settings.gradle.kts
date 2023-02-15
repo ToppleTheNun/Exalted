@@ -8,7 +8,7 @@ buildscript {
 bootstrapRefreshVersions()
 
 gradle.allprojects {
-    group = "com.richardharrah"
+    group = "io.github.topplethenun"
 
     repositories {
         mavenCentral()
@@ -28,4 +28,8 @@ gradle.allprojects {
 
 rootProject.name = "exalted"
 
-include("exalted-api")
+include(
+    "exalted-api",
+    "exalted-spigot",
+    "exalted-spigot-plugin"
+)
